@@ -2,9 +2,11 @@ package dev.trodrigues.dslearn.domain.entities;
 
 import javax.persistence.*;
 
+import java.io.Serializable;
+
 @Entity
 @Table(name = "tb_sections")
-public class Section {
+public class Section implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
