@@ -22,3 +22,6 @@ INSERT INTO tb_resources (title, description, position, image_uri, type, offer_i
 INSERT INTO tb_sections (title, description, position, image_uri, prerequisite_id, resource_id) VALUES ('Capítulo 1', 'Neste capítulo vamos começar', 1, 'https://i1.wp.com/jadiberkah.com/wp-content/uploads/2020/05/code-1076536_640.jpg', null, 1);
 INSERT INTO tb_sections (title, description, position, image_uri, prerequisite_id, resource_id) VALUES ('Capítulo 2', 'Dominando HTML', 2, 'https://i1.wp.com/jadiberkah.com/wp-content/uploads/2020/05/code-1076536_640.jpg', 1, 1);
 INSERT INTO tb_sections (title, description, position, image_uri, prerequisite_id, resource_id) VALUES ('Capítulo 3', 'Masterizando HTML', 3, 'https://i1.wp.com/jadiberkah.com/wp-content/uploads/2020/05/code-1076536_640.jpg', 2, 1);
+
+INSERT INTO tb_enrollments (user_id, offer_id, enroll_moment, refund_moment, available, only_update) VALUES (1, 1, '2020-12-25T05:00:00Z', null, true, false);
+INSERT INTO tb_enrollments (user_id, offer_id, enroll_moment, refund_moment, available, only_update) VALUES (2, 1, '2020-12-25T05:00:00Z', null, true, false);
