@@ -13,3 +13,8 @@ INSERT INTO tb_courses (name, image_uri, image_gray_uri) VALUES ('Bootcamp', 'ht
 
 INSERT INTO tb_offers (edition, start_moment, end_moment, course_id) VALUES ('1.0', TIMESTAMP WITHOUT TIME ZONE '2020-12-25T03:00:00Z', TIMESTAMP WITHOUT TIME ZONE '2021-12-25T03:00:00Z', 1);
 INSERT INTO tb_offers (edition, start_moment, end_moment, course_id) VALUES ('1.0', TIMESTAMP WITHOUT TIME ZONE '2021-03-25T03:00:00Z', TIMESTAMP WITHOUT TIME ZONE '2022-03-25T03:00:00Z', 1);
+
+INSERT INTO tb_resources (title, description, position, image_uri, type, offer_id) VALUES ('Trilha HTML', 'Trilha principal do curso', 1, 'https://i1.wp.com/jadiberkah.com/wp-content/uploads/2020/05/code-1076536_640.jpg?resize=640%2C340&ssl=1', 'LESSON_TASK', 1);
+INSERT INTO tb_resources (title, description, position, image_uri, type, offer_id) VALUES ('Forum', 'Tire suas dúvidas', 2, 'https://i1.wp.com/jadiberkah.com/wp-content/uploads/2020/05/code-1076536_640.jpg?resize=640%2C340&ssl=1', 'FORUM', 1);
+INSERT INTO tb_resources (title, description, position, image_uri, type, offer_id) VALUES ('Lives', 'Lives exclusivas para a turma', 3, 'https://i1.wp.com/jadiberkah.com/wp-content/uploads/2020/05/code-1076536_640.jpg?resize=640%2C340&ssl=1', 'LESSON_ONLY', 1);
+INSERT INTO tb_resources (title, description, position, image_uri, type, offer_id) VALUES ('Material de apoio', 'Documentos e código fonte', 4, 'https://i1.wp.com/jadiberkah.com/wp-content/uploads/2020/05/code-1076536_640.jpg?resize=640%2C340&ssl=1', 'EXTERNAL_LINK', 1);
