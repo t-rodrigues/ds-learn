@@ -6,5 +6,6 @@ create table tb_enrollments (
     available boolean default true,
     only_update boolean default false,
 
-    primary key (user_id, offer_id)
+    foreign key (user_id) references tb_users(id),
+    foreign key (offer_id) references tb_offers(id)
 );
