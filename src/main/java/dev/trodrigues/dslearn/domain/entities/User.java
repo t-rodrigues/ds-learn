@@ -26,15 +26,20 @@ public class User implements Serializable {
     @OneToMany(mappedBy = "user")
     private List<Notification> notifications = new ArrayList<>();
 
+    @OneToMany(mappedBy = "author")
+    private List<Topic> topics = new ArrayList<>();
+
+    @OneToMany(mappedBy = "author")
+    private List<Reply> replies = new ArrayList<>();
+
     public User() {
     }
 
-    public User(Long id, String name, String email, String password, Set<Role> roles) {
+    public User(Long id, String name, String email, String password) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.password = password;
-        this.roles = roles;
     }
 
     public Long getId() {
@@ -73,12 +78,16 @@ public class User implements Serializable {
         return roles;
     }
 
-    public void setRoles(Set<Role> roles) {
-        this.roles = roles;
-    }
-
     public List<Notification> getNotifications() {
         return notifications;
+    }
+
+    public List<Topic> getTopics() {
+        return topics;
+    }
+
+    public List<Reply> getReplies() {
+        return replies;
     }
 
     @Override

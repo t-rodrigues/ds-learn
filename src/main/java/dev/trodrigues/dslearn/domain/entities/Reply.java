@@ -4,9 +4,7 @@ import javax.persistence.*;
 
 import java.io.Serializable;
 import java.time.Instant;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 @Table(name = "tb_replies")
@@ -33,6 +31,9 @@ public class Reply implements Serializable {
     @ManyToMany
     @JoinTable(name = "tb_reply_likes", joinColumns = @JoinColumn(name = "reply_id"), inverseJoinColumns = @JoinColumn(name = "user_id"))
     private Set<User> likes = new HashSet<>();
+
+    @OneToMany(mappedBy = "answer")
+    private List<Topic> topics = new ArrayList<>();
 
     public Reply() {
     }
@@ -83,6 +84,14 @@ public class Reply implements Serializable {
 
     public void setAuthor(User author) {
         this.author = author;
+    }
+
+    public Set<User> getLikes() {
+        return likes;
+    }
+
+    public List<Topic> getTopics() {
+        return topics;
     }
 
     @Override
