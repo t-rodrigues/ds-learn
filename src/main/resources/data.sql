@@ -42,3 +42,5 @@ INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 2, 1);
 INSERT INTO tb_notifications (text, moment, read, route, user_id) VALUES ('Primeiro feedback de tarefa: favor revisar', '2020-12-25T05:00:00Z', false, '/offers/1/resource/1/sections/1', 1);
 INSERT INTO tb_notifications (text, moment, read, route, user_id) VALUES ('Primeiro feedback de tarefa: favor revisar', '2020-12-25T05:00:00Z', false, '/offers/1/resource/1/sections/1', 1);
 INSERT INTO tb_notifications (text, moment, read, route, user_id) VALUES ('Primeiro feedback de tarefa: favor revisar', '2020-12-25T05:00:00Z', false, '/offers/1/resource/1/sections/1', 1);
+
+INSERT INTO tb_deliveries (uri, moment, status, feedback, correct_Count, lesson_id, user_id, offer_id) VALUES ('https://github.com/t-rodrigues/dslearn', '2020-12-25T05:00:00Z', 'PENDING', null, null, 4, 1, 1);
