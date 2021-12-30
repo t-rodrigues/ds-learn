@@ -38,3 +38,7 @@ INSERT INTO tb_tasks (id, description, question_count, approval_count, weight, d
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 2, 1);
+
+INSERT INTO tb_notifications (text, moment, read, route, user_id) VALUES ('Primeiro feedback de tarefa: favor revisar', '2020-12-25T05:00:00Z', false, '/offers/1/resource/1/sections/1', 1);
+INSERT INTO tb_notifications (text, moment, read, route, user_id) VALUES ('Primeiro feedback de tarefa: favor revisar', '2020-12-25T05:00:00Z', false, '/offers/1/resource/1/sections/1', 1);
+INSERT INTO tb_notifications (text, moment, read, route, user_id) VALUES ('Primeiro feedback de tarefa: favor revisar', '2020-12-25T05:00:00Z', false, '/offers/1/resource/1/sections/1', 1);
